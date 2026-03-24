@@ -1,0 +1,48 @@
+# macOS 本地文件，纯属系统生成，进入版本库没有业务价值
+.DS_Store
+
+# IDE 本地工程文件只与个人开发环境相关，不应进入版本库
+.idea/
+.vscode/
+.fleet/
+*.iml
+
+# 本地 Python 解释器与虚拟环境目录，每台机器都应自行生成
+.venv*/
+venv/
+
+# Python 运行缓存与本地工具缓存，属于可重建产物
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.pyre/
+.tox/
+.nox/
+
+# 测试覆盖率与报告目录，只用于本机验证
+.coverage
+.coverage.*
+coverage.xml
+junit.xml
+htmlcov/
+test-results/
+playwright-report/
+
+# 打包与安装中间产物，避免提交由构建生成的目录
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# 本地环境变量文件可能包含个人配置或敏感信息
+.env
+.env.*
+
+# 本地运行数据目录包含配置、日志、数据库和测试产物，不应进入版本库
+data/
